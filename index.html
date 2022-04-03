@@ -19,30 +19,188 @@
 
 <body>
     <header>
-        <!--aquí irá nav y carousel-->
+        <!--in<icio navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top seccion-navbar">
+            <div class="container-xl px-4 px-lg-5">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/img/viajes.svg">
+                    <span>Viajes Chile</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#QuienesSomos">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--termino navbar-->
+        <!-- inicio carousel-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> <!-- termino carousel-->
     </header>
-    <section>
-        <!-- aquí irá sección quiénes somos-->
+    <!-- seccion quienes somos-->
+    <section class="d-none d-sm-block">
+        <h2 id="QuienesSomos" class="text-center text-uppercase text-white py-3 pt-5 mb-">¿Quiénes somos?</h2>
+        <hr class="mx-auto text-white acheR">
+        <div class="container pt-3 ">
+            <div class="row">
+            <div class="col mx-auto pt-3">
+                    <i class="fa-solid fa-plane fa-2x text-center bg-info d-block py-1"></i>
+                    <p class="text-white fw-light" data-bs-toggle="popover" data-bs-placement="left"
+                        data-bs-content="Hacemos viajes en avión">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris vel enim euismod sodales
+                        et non erat. Pellentesque risus libero, feugiat eu libero sit amet, mattis suscipit nisi.
+                        Quisque convallis felis id ultrices bibendum. Vestibulum vulputate, nisi et pharetra convallis,
+                        justo purus fermentum neque, ac faucibus massa libero quis justo. Suspendisse a ligula id nulla
+                        ultricies tincidunt. Nunc at bibendum mi. Quisque sit amet erat molestie, fermentum massa eget,
+                        faucibus ex. Phasellus sed ante in ex vulputate auctor. Fusce ac tellus vitae massa posuere
+                        fringilla. Proin leo ipsum, varius sit amet ligula quis, vehicula convallis odio. Vestibulum
+                        vitae nisi gravida, feugiat mauris eu, vestibulum sapien. Vivamus molestie massa vel tincidunt
+                        iaculis. Fusce id aliquam est. Aenean sed odio vitae ante pharetra sodales.
+                    </p>
+                </div>
+                <div class="col mx-auto pt-3">
+                    <p class="text-white fw-light" data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="Hacemos viajes a la montaña">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris vel enim euismod sodales
+                        et non erat. Pellentesque risus libero, feugiat eu libero sit amet, mattis suscipit nisi.
+                        Quisque convallis felis id ultrices bibendum. Vestibulum vulputate, nisi et pharetra convallis,
+                        justo purus fermentum neque, ac faucibus massa libero quis justo. Suspendisse a ligula id nulla
+                        ultricies tincidunt. Nunc at bibendum mi. Quisque sit amet erat molestie, fermentum massa eget,
+                        faucibus ex. Phasellus sed ante in ex vulputate auctor. Fusce ac tellus vitae massa posuere
+                        fringilla. Proin leo ipsum, varius sit amet ligula quis, vehicula convallis odio. Vestibulum
+                        vitae nisi gravida, feugiat mauris eu, vestibulum sapien. Vivamus molestie massa vel tincidunt
+                        iaculis.
+                        Fusce id aliquam est. Aenean sed odio vitae ante pharetra sodales.
+                    </p>
+                    <i class="fa-solid fa-mountain fa-2x text-center bg-info d-block py-1"></i>
+                </div>
+                <div class="col mx-auto pt-3">
+                    <i class="fa-solid fa-route fa-2x text-center bg-info d-block py-1"></i>
+                    <p class=" text-white fw-light" data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-content="Hacemos viajes por ruta">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris vel enim euismod sodales
+                        et non erat. Pellentesque risus libero, feugiat eu libero sit amet, mattis suscipit nisi.
+                        Quisque convallis felis id ultrices bibendum. Vestibulum vulputate, nisi et pharetra convallis,
+                        justo purus fermentum neque, ac faucibus massa libero quis justo. Suspendisse a ligula id nulla
+                        ultricies tincidunt. Nunc at bibendum mi. Quisque sit amet erat molestie, fermentum massa eget,
+                        faucibus ex. Phasellus sed ante in ex vulputate auctor. Fusce ac tellus vitae massa posuere
+                        fringilla. Proin leo ipsum, varius sit amet ligula quis, vehicula convallis odio. Vestibulum
+                        vitae nisi gravida, feugiat mauris eu, vestibulum sapien. Vivamus molestie massa vel tincidunt
+                        iaculis.
+                        Fusce id aliquam est. Aenean sed odio vitae ante pharetra sodales.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
+    <!--termino seccion quienes somos-->
+    <!--seccion destacados-->
     <section>
-        <!--aquí ira sección destacados-->
-    </section>
-    <section>
-        <!--aquí ira sección contacto-->
-    </section>
-    <footer>
-        <!--aquí ira footer con sus iconos-->
-    </footer>
-    <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- font awesome-->
-    <script src="https://kit.fontawesome.com/ab82a6a3bd.js" crossorigin="anonymous"></script>
-    <!--mi script-->
-    <script src="assets/js/script.js"> </script>
+        <h2 id="Destacados" class="text-center text-uppercase text-white py-3 pt-5 mb-4">Destacados</h2>
+        <hr class="mx-auto text-white acheR">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col pt-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top imgs" src="assets/img/card1.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quos
+                                cumque? Unde est
+                                consectetur
+                                maxime dolorem aliquid, laudantium veritatis molestiae nostrum..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top imgs" src="assets/img/card2.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quos
+                                cumque? Unde est
+                                consectetur
+                                maxime dolorem aliquid, laudantium veritatis molestiae nostrum..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top imgs" src="assets/img/card3.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quos
+                                cumque? Unde est
+                                consectetur
+                                maxime dolorem aliquid, laudantium veritatis molestiae nostrum..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top imgs" src="assets/img/card4.jpg" alt="Card image cap">
+                        <div class="card-body bg-info">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quos
+                                cumque? Unde est
+                                consectetur
+                                maxime dolorem aliquid, laudantium veritatis molestiae nostrum..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <!-- fin seccion destacados-->
+            <section>
+                <!--aquí ira sección contacto-->
+            </section>
+            <footer>
+                <!--aquí ira footer con sus iconos-->
+            </footer>
+            <!--bootstrap-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+            <!--jquery-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <!-- font awesome-->
+            <script src="https://kit.fontawesome.com/ab82a6a3bd.js" crossorigin="anonymous"></script>
+            <!--mi script-->
+            <script src="assets/js/script.js"> </script>
 </body>
-
 </html>

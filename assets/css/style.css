@@ -1,0 +1,18 @@
+.seccion-navbar img{
+    height: 30px;
+}
+
+.carrusel img {
+    height: 50vh;
+
+}
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.imgs{
+    height: 150px;
+}
+.acheR{
+    width: 95%;
+}
